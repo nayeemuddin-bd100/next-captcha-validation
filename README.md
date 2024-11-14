@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js CAPTCHA Validation Demo
 
-## Getting Started
+A modern, user-friendly CAPTCHA implementation using Next.js 13+, showcasing both text-based and image-based verification methods.
 
-First, run the development server:
+## 🌟 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+-   **Dual Verification Methods**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    -   Text-based SVG CAPTCHA
+    -   Image selection verification using Unsplash images
+    -   Easy switching between methods
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+-   **Modern Tech Stack**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+    -   Next.js 13+ with App Router
+    -   TypeScript for type safety
+    -   Tailwind CSS for styling
+    -   Server Actions and API Routes
 
-## Learn More
+-   **User Experience**
+    -   Responsive design
+    -   Clear visual feedback
+    -   Accessible interface
+    -   Mobile-friendly
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Quick Start
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone the repository:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    ```bash
+    git clone https://github.com/yourusername/next-captcha-validation.git
+    cd next-captcha-validation
+    ```
 
-## Deploy on Vercel
+2. Install dependencies:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    ```bash
+    npm install
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. Set up environment variables:
+   Create a `.env.local` file with:
+
+    ```env
+    NEXT_PUBLIC_UNSPLASH_ACCESS_KEY=your_unsplash_access_key
+    ```
+
+4. Run the development server:
+
+    ```bash
+    npm run dev
+    ```
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## 🔧 Configuration
+
+### Unsplash API
+
+1. Create an account at [Unsplash Developers](https://unsplash.com/developers)
+2. Create a new application
+3. Copy your access key to `.env.local`
+
+### CAPTCHA Settings
+
+-   Text CAPTCHA options can be modified in `/src/app/api/captcha/svg/route.ts`
+-   Image CAPTCHA categories can be adjusted in `/src/components/ImageCaptcha.tsx`
+
+## 📱 Demo Credentials
+
+-   Email: demo@example.com
+-   Password: demo123
+
+## 🛠️ Built With
+
+-   [Next.js](https://nextjs.org/) - React Framework
+-   [TypeScript](https://www.typescriptlang.org/) - Type Safety
+-   [Tailwind CSS](https://tailwindcss.com/) - Styling
+-   [svg-captcha](https://github.com/produck/svg-captcha) - Text CAPTCHA Generation
+-   [Unsplash API](https://unsplash.com/developers) - Image CAPTCHA
