@@ -28,7 +28,7 @@ A modern, user-friendly CAPTCHA implementation using Next.js 13+, showcasing bot
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/next-captcha-validation.git
+    git clone https://github.com/nayeemuddin-bd100/next-captcha-validation.git
     cd next-captcha-validation
     ```
 
